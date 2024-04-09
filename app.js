@@ -22,8 +22,6 @@ const userRoutes = require('./routes/user');
 const sauceRoutes = require('./routes/sauce');
 
 
-
-
 //Call Express to create an application:
 const app = express();
 
@@ -33,7 +31,7 @@ app.use(morgan('dev'));
 
 
 
-//CORS : 
+//CORS :
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
